@@ -1,0 +1,29 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Minicursos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+ <ion-list class="lista">
+
+        <ion-item href="#"  *ngFor="let episode of result" (click)='Mudarestado([episode.id])'>
+        	<h3><b>{{episode.oficina}}</b></h3>
+        	<div id='{{episode.id}}' style="display: none;">
+        		<h4>Ministrante : <b> {{episode.nome}} </b> </h4>
+        		<h4>Local : <b> {{episode.local.local}} </b> </h4>
+        		<h4>Horario : <b> {{episode.local.horario}} </b> </h4>
+        		<h4>Data : <b> {{episode.local.data}} </b> </h4>
+
+        	</div>
+        	
+        </ion-item>
+     </ion-list>
+
+</ion-content>

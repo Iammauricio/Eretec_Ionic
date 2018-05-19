@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <!-- <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <ion-title>ERETEC</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+
+<ion-slides pager="true" [initialSlide]="1" >
+ <!-- ======================
+          SLIDE 1
+      ====================== -->
+  <ion-slide >
+  <img src="../assets/imgs/PATROCINADOR.png">
+  <h3 (click)="PagePatrocinio()">
+  PATROCINADORES
+  </h3>
+
+  </ion-slide>
+
+ <!-- ======================
+          SLIDE 2
+      ====================== -->
+  <ion-slide  style="background: black;">
+    <img src="../assets/imgs/logo18.png" style="margin-top: -90px;">
+  </ion-slide>
+ <!-- ======================
+          SLIDE 3
+      ====================== -->
+  <ion-slide >
+  <img src="../assets/imgs/mini.jpg" style=" width: 100%; height: 200px; margin-top: 20px;">
+     <h3 (click)="PageMinicurso()" style="margin-top: -300px; ">
+ MINICURSOS   <strong ><h1> &#10159; </h1></strong>
+  </h3>
+
+  </ion-slide>
+
+</ion-slides>
+</ion-content>
+<!-- 
+lista pop-up
+  <button ion-button secondary style="width: 100%;"  (click)="Mudarestado('minhaDiv')" > Criação de jogos  com Construct 2</button>
+<div id="minhaDiv" style="display: none; background: gray; color:black; margin-top:3px; border-radius: 3px; padding: 5px; font:10px Courier;">
+  
+   <h5> Ministrante :<b> Manoel Carvalho </b> </h5>
+    
+     <h5> Data :<b> 17/05/2018</b></h5>
+     <h5> Local :<b> Sala 4</b></h5>
+     <h5> Horario : <b> 9:20 - 10:10</b></h5>
+
+</div> -->
